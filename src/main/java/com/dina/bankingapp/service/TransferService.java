@@ -25,6 +25,7 @@ public class TransferService {
     @Autowired
     private AuditRepository auditRepository;
 
+
     @Transactional
     public void transferFunds(TransferRequest transferRequest) {
         if (transactionRepository.existsByIdempotencyKey(transferRequest.getIdempotencyKey())) {
@@ -33,9 +34,6 @@ public class TransferService {
         }
 
         try {
-            List<Account> accountList = accountRepository.findAll();
-            System.out.println(accountList);
-
             Account fromAccount = accountRepository.findById(transferRequest.getFromAccountId())
                     .orElseThrow(() -> new RuntimeException("From account not found"));
             Account toAccount = accountRepository.findById(transferRequest.getToAccountId())

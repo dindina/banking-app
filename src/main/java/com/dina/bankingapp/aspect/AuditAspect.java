@@ -1,8 +1,8 @@
-package com.dina.banking_app.aspect;
+package com.dina.bankingapp.aspect;
 
-import com.dina.banking_app.dto.TransferRequest;
-import com.dina.banking_app.entity.Audit;
-import com.dina.banking_app.repository.AuditRepository;
+import com.dina.bankingapp.dto.TransferRequest;
+import com.dina.bankingapp.entity.Audit;
+import com.dina.bankingapp.repository.AuditRepository;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Aspect;

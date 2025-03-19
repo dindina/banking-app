@@ -1,4 +1,4 @@
-package com.dina.banking_app;
+package com.dina.bankingapp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

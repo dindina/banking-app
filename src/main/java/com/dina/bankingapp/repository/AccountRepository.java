@@ -1,6 +1,6 @@
-package com.dina.banking_app.repository;
+package com.dina.bankingapp.repository;
 
-import com.dina.banking_app.entity.Account;
+import com.dina.bankingapp.entity.Account;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

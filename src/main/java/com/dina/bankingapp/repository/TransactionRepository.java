@@ -1,6 +1,6 @@
-package com.dina.banking_app.repository;
+package com.dina.bankingapp.repository;
 
-import com.dina.banking_app.entity.Transaction;
+import com.dina.bankingapp.entity.Transaction;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface TransactionRepository extends JpaRepository<Transaction, Long> {

@@ -1,12 +1,11 @@
-package com.dina.banking_app.service;
+package com.dina.bankingapp.service;
 
-import com.dina.banking_app.dto.TransferRequest;
-import com.dina.banking_app.entity.Account;
-import com.dina.banking_app.entity.Audit;
-import com.dina.banking_app.entity.Transaction;
-import com.dina.banking_app.repository.AccountRepository;
-import com.dina.banking_app.repository.AuditRepository;
-import com.dina.banking_app.repository.TransactionRepository;
+import com.dina.bankingapp.dto.TransferRequest;
+import com.dina.bankingapp.entity.Account;
+import com.dina.bankingapp.entity.Transaction;
+import com.dina.bankingapp.repository.AccountRepository;
+import com.dina.bankingapp.repository.AuditRepository;
+import com.dina.bankingapp.repository.TransactionRepository;
 import jakarta.persistence.OptimisticLockException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

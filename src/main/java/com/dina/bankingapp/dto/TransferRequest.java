@@ -1,8 +1,5 @@
-package com.dina.banking_app.dto;
+package com.dina.bankingapp.dto;
 
-
-import lombok.*;
-import lombok.experimental.Accessors;
 
 //@Getter
 //@Setter

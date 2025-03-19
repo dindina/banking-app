@@ -1,7 +1,7 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'com.dina.banking-app' is invalid and this project uses 'com.dina.banking_app' instead.
+* The original package name 'com.dina.banking-app' is invalid and this project uses 'com.dina.bankingapp' instead.
 
 # Getting Started
 

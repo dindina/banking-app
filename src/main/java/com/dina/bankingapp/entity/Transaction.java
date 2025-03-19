@@ -1,48 +1,39 @@
-package com.dina.banking_app.entity;
+package com.dina.bankingapp.entity;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+
 import java.time.LocalDateTime;
+
+
 @Entity
-@Table(name = "audit")
-public class Audit {
+@Table(name = "transaction")
+public class Transaction {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private Long accountId;
-    private String transactionType; // DEBIT or CREDIT
+    private Long fromAccountId;
+    private Long toAccountId;
     private double amount;
     private LocalDateTime timestamp;
     private String userId;
+    private String idempotencyKey;
 
-    // Constructors, getters, setters...
-
-    public Long getId() {
-        return id;
+    public Long getFromAccountId() {
+        return fromAccountId;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setFromAccountId(Long fromAccountId) {
+        this.fromAccountId = fromAccountId;
     }
 
-    public Long getAccountId() {
-        return accountId;
+    public Long getToAccountId() {
+        return toAccountId;
     }
 
-    public void setAccountId(Long accountId) {
-        this.accountId = accountId;
-    }
-
-    public String getTransactionType() {
-        return transactionType;
-    }
-
-    public void setTransactionType(String transactionType) {
-        this.transactionType = transactionType;
+    public void setToAccountId(Long toAccountId) {
+        this.toAccountId = toAccountId;
     }
 
     public double getAmount() {
@@ -67,5 +58,13 @@ public class Audit {
 
     public void setUserId(String userId) {
         this.userId = userId;
+    }
+
+    public String getIdempotencyKey() {
+        return idempotencyKey;
+    }
+
+    public void setIdempotencyKey(String idempotencyKey) {
+        this.idempotencyKey = idempotencyKey;
     }
 }

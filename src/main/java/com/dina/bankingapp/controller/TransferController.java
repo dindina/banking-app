@@ -1,9 +1,9 @@
-package com.dina.banking_app.controller;
+package com.dina.bankingapp.controller;
 
-import com.dina.banking_app.dto.TransferRequest;
-import com.dina.banking_app.entity.Account;
-import com.dina.banking_app.repository.AccountRepository;
-import com.dina.banking_app.service.TransferService;
+import com.dina.bankingapp.dto.TransferRequest;
+import com.dina.bankingapp.entity.Account;
+import com.dina.bankingapp.repository.AccountRepository;
+import com.dina.bankingapp.service.TransferService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

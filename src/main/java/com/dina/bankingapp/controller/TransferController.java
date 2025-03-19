@@ -22,8 +22,6 @@ public class TransferController {
     @PostMapping
     public void transferFunds(@RequestBody TransferRequest transferRequest) {
 
-        List<Account> accountList = accountRepository.findAll();
-        System.out.println("all records " + accountList);
         transferService.transferFunds(transferRequest);
     }
 }

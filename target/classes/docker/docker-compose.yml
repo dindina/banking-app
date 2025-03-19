@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: password # Replace with your desired password
+      MYSQL_DATABASE: bankingdb # Optional: create a default database
+    ports:
+      - "3306:3306" # Maps the container's 3306 port to your host's 3306 port
+    volumes:
+      - mysql_data:/var/lib/mysql # Persists data even if the container is stopped/removed
+    restart: always # Restarts the container if it stops
+
+volumes:
+  mysql_data:

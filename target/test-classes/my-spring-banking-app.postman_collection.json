@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "571c6926-be64-4c2b-a2ae-374592a16fad",
+		"name": "my-spring-banking-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1324607"
+	},
+	"item": [
+		{
+			"name": "htttp://localhost:8080/api/transfer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"fromAccountId\": 1,\n  \"toAccountId\": 2,\n  \"amount\": 1.50,\n  \"userId\": \"user456\",\n  \"idempotencyKey\": \"transaction-id-80032\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/transfer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"transfer"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
